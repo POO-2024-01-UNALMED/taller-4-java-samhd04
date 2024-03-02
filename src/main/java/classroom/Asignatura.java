@@ -23,7 +23,7 @@ public class Asignatura {
     public Asignatura(String nombre, int codigoInterno, int codigoExterno,Tipo tipo) {
         this.nombre = nombre;
         this.codigoInterno = codigoInterno;
-        this.codigoExterno = codigoInterno;
+        this.codigoExterno = this.codigoInterno;
         this.tipo = tipo;
     }
 
