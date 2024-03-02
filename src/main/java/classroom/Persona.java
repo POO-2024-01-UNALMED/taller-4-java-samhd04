@@ -5,11 +5,9 @@ public class Persona {
     final long cedula;
     String nombre;
     static int totalPersonas;
-    static long cedulaPorDefecto;
     
     public Persona() {
-    	this("", cedulaPorDefecto);
-    	cedulaPorDefecto++;
+    	this("", 0);
     }
 
     public Persona(long cedula, String nombre) {
@@ -21,8 +19,7 @@ public class Persona {
     }
 
     public Persona(String nombre) {
-    	this(nombre, cedulaPorDefecto);
-    	cedulaPorDefecto++;
+    	this(nombre, 1);
     }
     
     public Persona(String nombre, long cedula) {
