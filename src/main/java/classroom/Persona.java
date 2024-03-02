@@ -7,6 +7,11 @@ public class Persona {
     static int totalPersonas;
     static int numeroCedulasPorDefecto;
     
+    static {
+    	totalPersonas = 0;
+    	numeroCedulasPorDefecto = 0;
+    }
+    
     public Persona() {
     	this.cedula = numeroCedulasPorDefecto;
     	this.nombre = "";
